@@ -1,0 +1,50 @@
+.homepage {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgb(98, 98, 225), rgb(56, 56, 151)),
+    url("/public/bg.jpg");
+
+  background-image: url("../../public/bg.jpg");
+}
+
+.homepage section {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage h1 {
+  text-align: center;
+  margin-top: 200px;
+  font-size: x-large;
+  color: rgb(3, 8, 8);
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  height: 100px;
+  width: 300px;
+  font-weight: 600;
+  font-size: x-large;
+  background-color: beige;
+  border-radius: 10px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.cta:hover {
+  background-color: aquamarine;
+}

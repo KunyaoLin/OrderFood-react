@@ -1,0 +1,7 @@
+.CartPage {
+  display: grid;
+  grid-template-rows: 65px 1fr;
+  width: full;
+  height: 100vh;
+  background-color: rgb(219, 230, 241);
+}

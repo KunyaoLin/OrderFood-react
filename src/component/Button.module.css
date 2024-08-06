@@ -1,0 +1,13 @@
+.button {
+  width: 50px; /* 固定宽度 */
+  height: 30px; /* 固定高度 */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease; /* 平滑过渡 */
+}
+
+.button:active {
+  /* 确保没有不必要的样式变化 */
+  transform: scale(0.95); /* 轻微缩放效果 */
+}

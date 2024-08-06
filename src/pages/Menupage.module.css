@@ -1,0 +1,7 @@
+.MenuPage {
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  width: full;
+  height: 95%;
+  background-color: rgb(203, 213, 225);
+}
