@@ -9,10 +9,3 @@ root.render(
     <App />
   </MenuProvider>
 );
-{
-  /* <React.StrictMode>
-<MenuProvider>
-  <App />
-</MenuProvider>
-</React.StrictMode> */
-}

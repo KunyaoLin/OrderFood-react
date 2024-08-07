@@ -1,7 +1,5 @@
-import SignupPage from "./SignupPage";
-import NavBar from "../component/NavBar";
-import LoginPage from "./LoginPage";
 import { Outlet } from "react-router-dom";
+import NavBar from "../component/NavBar";
 
 function Account() {
   return (

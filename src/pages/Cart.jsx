@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { IoArrowBack } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import CartItem from "../component/CartItem";
 import { useMenu } from "../component/MenuContext";
 import NavBar from "../component/NavBar";
-import style from "./Cartpage.module.css";
 function Cart() {
   const {
     deleteOrder,
@@ -21,7 +20,6 @@ function Cart() {
     setPriority,
     priority,
     setOrderList,
-    setConfirm,
   } = useMenu();
 
   const navigate = useNavigate();
@@ -57,11 +55,11 @@ function Cart() {
     }
   }, [cartList, priority]);
   return (
-    <div className={style.CartPage}>
+    <div className="min-h-screen grid-row-[65px_1fr] fixed w-full bg-primary-50">
       <div>
         <NavBar />
       </div>
-      <div className="grid grid-rows-[600px_20px] p-3 h-full mt-16 w-full fixed">
+      <div className="grid grid-rows-[500px_40px] p-3 mt-28 w-full fixed ">
         {cartList.length === 0 ? (
           <p className="text-center text-xl font-semibold">
             {" "}
@@ -129,8 +127,7 @@ function Cart() {
             </div>
           </div>
         )}
-
-        <div className="h-12 w-full mb-0 grid grid-cols-2">
+        <div className="h-32 w-full mb-0 grid grid-cols-2">
           <div className="flex align-top justify-center">
             <button
               onClick={() => navigate("/menu")}

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-import { supabase } from "../lib/supabase";
 import { FaSpinner } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "../lib/supabase";
 function SignupPage() {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -10,7 +10,6 @@ function SignupPage() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [passwordInput, setpasswordInput] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
   const [isLoading, setLoading] = useState(false);
   const maxLength = 16;
   const minLength = 8;
@@ -40,7 +39,6 @@ function SignupPage() {
   }
   async function handleSubmit(e) {
     e.preventDefault();
-    setSuccessMessage("");
     setLoading(true);
 
     const { error } = await supabase.auth.signUp({
@@ -64,7 +62,6 @@ function SignupPage() {
       setpasswordInput(false);
       alert("Error happened, please try again!");
     } else {
-      setSuccessMessage("Check your email for the confirmation link");
       setLoading(false);
       navigate("/account/order");
     }

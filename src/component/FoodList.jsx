@@ -9,7 +9,7 @@ function FoodList({ field }) {
   const handleCartClick = () => {
     navigate("/cart");
   };
-  // allFood.length !== 0
+
   return !loading ? (
     <div>
       <div className="w-full border max-h-screen border-gray-300 p-4 ">
@@ -86,7 +86,3 @@ function FoodList({ field }) {
 }
 
 export default FoodList;
-
-//2.spinner 动画
-//3.在cart页面 设置总额信息
-//4. 结账/ 判断是否登陆，没登录就要登陆，登陆就跳转到支付页面

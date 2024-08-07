@@ -10,6 +10,3 @@ function Button({ id, field, handleCart }) {
 }
 
 export default Button;
-
-// className="rounded border bg-gray-400 size-8 hover:bg-blue-300 text-xl"
-// style={{ outline: "none" }}

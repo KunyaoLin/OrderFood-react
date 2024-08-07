@@ -29,7 +29,7 @@ function SideBar() {
   );
   return (
     <div className=" bg-primary-50 grid h-full grid-cols-[105px_1fr] w-full fixed gap-4 mt-20">
-      <ul className="grid bg-primary-50 grid-row-4 h-96 text-lg w-side border border-bottom-">
+      <ul className="grid mt-10 bg-primary-50 grid-row-4 h-96 text-lg w-side border border-bottom-">
         <li className=" border-gray-300">
           <Link to="lunch">Lunch</Link>
         </li>

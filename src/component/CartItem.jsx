@@ -10,7 +10,6 @@ function CartItem({
   decreaseCart,
   deleteOrder,
 }) {
-  // calcTotal(num, price);
   return (
     <div className="grid grid-cols-2 w-cart mt-5">
       <div className=" flex w-full">

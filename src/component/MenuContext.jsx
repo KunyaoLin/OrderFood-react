@@ -1,6 +1,5 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 import { taxRate } from "../lib/service";
-import { supabase } from "../lib/supabase";
 const initialState = {
   loading: false,
   cartList: [],
@@ -200,24 +199,8 @@ function MenuProvider({ children }) {
     dispatch({ type: "rejected", payload: error });
   }
 
-  //   useEffect(function () {
-  //     async function getFoodInfo() {
-  //       try {
-  //         const { data, error } = await supabase.from("food").select("*");
-  //         if (error !== null) {
-  //           throw new Error("Something Wrong on getting food info");
-  //         }
-  //         dispatch({ type: "getFood", payload: data });
-  //       } catch (error) {
-  //         dispatch({ type: "rejected", payload: error });
-  //       }
-  //     }
-  //     getFoodInfo();
-  //   }, []);
-
   function increase(id) {
     dispatch({ type: "increase", payload: id });
-    // dispatch({type:"totalCost",payload:})
   }
 
   function decrease(id) {

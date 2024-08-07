@@ -1,4 +1,3 @@
-import { useState } from "react";
 import NavBar from "../component/NavBar";
 import SideBar from "../component/SideBar";
 import style from "./Menupage.module.css";
